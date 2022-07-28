@@ -1,4 +1,4 @@
-<p *ngIf="condition; else elseBlock">True</p>
+<!-- <p *ngIf="condition; else elseBlock">True</p>
 
 <ng-template #elseBlock>
   <p>False</p>
@@ -15,20 +15,41 @@
 <br />
 <br />
 
+-->
+
+<p>estou na casa do gesiel e da vanessa</p>
+<p>curtindo as férias</p>
+<p>com o luke e rick.</p>
+
 <ul>
   <li *ngFor="let item of list; let i = index" (click)="onClickEventList(i)">
     [{{ i }}] - {{ item.nome }}, idade : {{ item.idade }}
   </li>
 </ul>
 
-<button (click)="onClickAddList()">Add</button>
+<!-- <button (click)="onClickAddList()">Add</button> -->
 
-<br />
+<!-- <br />
 <br />
 <hr />
 <input type="text" [(ngModel)]="nome" />
 <div [ngSwitch]="nome">
-  <p *ngSwitchCase="'Gesiel'">Gesiel</p>
-  <p *ngSwitchCase="'Maria'">Maria</p>
-  <p *ngSwitchDefault>Nenhum nome desses está cadastrado</p>
-</div>
+  <p *ngSwitchCase="'Gesiel'">como que foi no banho ge ?</p>
+
+  <p *ngSwitchCase="'Vanessa'">fofoqueiro e´ uma profissão?</p>
+
+  <p *ngSwitchCase="'abner'">o matheus ta te encomodando aí</p>
+
+  <p *ngSwitchCase="'eduarda'">para de ser chata</p>
+
+  <p *ngSwitchCase="'sony'">playstation é o melhor sempre</p>
+
+  <p *ngSwitchCase="'lixo xbox'">playstation é mehor que xbox</p>
+
+  <p *ngSwitchCase="'Guilherme'">eae duda dois</p>
+
+  <p *ngSwitchDefault>
+    digite Gesiel, Vanessa, Guillherme, abner, eduarda, sony,lixo xbox
+  </p>
+</div> -->
+<button (click)="onClickAddList()">aidicionar</button>

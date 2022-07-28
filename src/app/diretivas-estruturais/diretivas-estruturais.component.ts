@@ -37,6 +37,11 @@ export class DiretivasEstruturaisComponent implements OnInit {
   public onClickAddList() {
     this.list.push({ nome: 'Adicionado via botão', idade: 100 });
   }
+
+  AdincionarAlguem() {
+    alert('vai tomar banho vanessa');
+  }
+
   public onClickEventList(event: number) {
     this.list.splice(event, 1);
   }

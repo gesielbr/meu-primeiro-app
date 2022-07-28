@@ -10,7 +10,13 @@ import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas
 import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
 
 @NgModule({
-  declarations: [AppComponent, TitleComponent, DataBindingComponent, DiretivasEstruturaisComponent, DiretivasAtributosComponent],
+  declarations: [
+    AppComponent,
+    TitleComponent,
+    DataBindingComponent,
+    DiretivasEstruturaisComponent,
+    DiretivasAtributosComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
