@@ -11,7 +11,7 @@ export class DiretivasAtributosComponent implements OnInit {
   public background: string = 'yellow';
 
   public nome: string = '';
-  public list: Array<{ nome: string }> = [];
+  public list: Array<{ nome: string }> = [{ nome: 'Gesiel Oliveira' }];
 
   constructor() {}
 
