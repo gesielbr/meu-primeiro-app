@@ -11,7 +11,7 @@ export class DiretivasAtributosComponent implements OnInit {
   public background: string = 'yellow';
 
   public nome: string = '';
-  public list: Array<{ nome: string }> = [{ nome: 'Gesiel Oliveira' }];
+  public list: Array<{ nome: string }> = [];
 
   public date: Date = new Date();
 
@@ -40,7 +40,9 @@ export class DiretivasAtributosComponent implements OnInit {
   }
 
   public salvar() {
-    this.list.push({ nome: this.nome });
-    this.nome = '';
+    if (this.nome.length > 0 && this.nome != null) {
+      this.list.push({ nome: this.nome });
+      this.nome = '';
+    }
   }
 }

@@ -31,6 +31,10 @@
 
 <button (click)="salvar()">Salvar</button>
 
-<li *ngFor="let item of list">{{ item.nome | uppercase }}</li>
+<ul>
+  <li *ngFor="let item of list">
+    {{ item.nome | uppercase }}
+  </li>
+</ul>
 
 {{ date | date: "dd/MM/yyyy" }}
