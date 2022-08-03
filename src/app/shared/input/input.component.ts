@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
   @Input() public contador: number = 0;
+  // @Input() public contador: string ='';
 
   constructor() {}
 

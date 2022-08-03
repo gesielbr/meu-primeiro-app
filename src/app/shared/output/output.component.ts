@@ -30,7 +30,9 @@ export class OutputComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
   public getDados(event: number) {
+    //console.log(this.list[event]); //pegar item do array list
     this.enviarDados.emit(this.list[event]);
   }
 }
