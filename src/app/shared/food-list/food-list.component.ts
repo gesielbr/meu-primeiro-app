@@ -13,5 +13,22 @@ export class FoodListComponent implements OnInit {
 
   ngOnInit(): void {
     this.foodList = this.foodListService.foodList();
+
+    //SUBSCRIBE PODE SER ASSIM
+    this.foodListService.emitEvent.subscribe((res) =>
+      alert(
+        `Você escutou e fez esse alerta via Subscribe, a resposta é => ${res}`
+      )
+    );
+
+    // OU SUBSCRIBE PODE SER ASSIM
+    this.foodListService.emitEvent.subscribe({
+      next: (res: any) => {
+        alert(
+          `Você escutou e fez esse alerta via Subscribe, você digitou => ${res}`
+        );
+      },
+      error: (err: any) => console.log(err),
+    });
   }
 }
