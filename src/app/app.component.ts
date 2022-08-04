@@ -15,7 +15,7 @@ import { Component, OnInit } from '@angular/core';
     <p>Valor Atual Event do Input = {{ valorAtual }}</p>
 
     <app-input [contador]="addValue"></app-input><br />
-    <button (click)="add()">Adicionar via @INPUT</button> <br /><br />
+    <button (click)="add()">Somar +1 via @INPUT</button> <br /><br />
 
     <ng-template [ngIf]="getDados">
       <h1>{{ getDados.nome }}</h1>
